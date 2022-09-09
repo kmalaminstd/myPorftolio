@@ -4,11 +4,13 @@
     }
 
     .nav{
-        width: 150px;
+        width: 200px;
+        margin: 0 20px 0 20px;
     }
 
     .hero-area{
         width: 500px;
+        margin: 0 20px 0 20px;
     }
 
     .selfBio{
@@ -16,14 +18,32 @@
     }
 }
 
-/* 
+
 @media only screen and (max-width: 800px){
     
+    .nav{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+        margin: 0;
+    }
+
+    .hero-area{
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav.showNav{
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
 
     .toggleNav{
         display: block;
-        position: absolute;
-        top: 0px;
-        left: 0px;
     }
-} */
+}
