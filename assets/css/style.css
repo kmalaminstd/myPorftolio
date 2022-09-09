@@ -2,90 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-img{
-    max-width: 100%;
-}
-
-ul, ol{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
+    font-family: 'Inter', sans-serif;
 }
 
 body{
-    background-color: #007beb;
-    padding: 20px;
+    background-color: #9B8484;
 }
 
-/* nav btn responsive */
-
-.navBtn{
+.toggleNav{
     display: none;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    float: right;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
-.navBtn nav{
-    padding: 0 18px;
-    height: 100vh;
+.main{
+    width: 950px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.nav{
+    background-color: #d9d9d9;
     width: 200px;
-    background-color: #222222;
+    float: left;
+    height: auto;
+    padding: 40px 0;
+    border: 1px solid #000;
 }
 
-.navBtn nav ul li{
+.nav .image{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.nav .image img{
+    border: 5px solid #000;
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.nav .nav-links{
+    padding: 0 30px;
+    width: 100%;
+    height: auto;
+}
+
+.nav .nav-links ul{
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav-links ul li {
     margin: 30px 0;
 }
 
-.navBtn nav ul li a{
-    color: #fff;
+.nav .nav-links ul li a{
+    text-transform: uppercase;
+    color: #000;
+    display: block;
+    padding: 6px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #d9d9d9;
+} 
+
+.nav-links ul li a:hover{
+    border-bottom: 1px solid #000;
+    transition: 0.5s linear;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
 }
 
-/* nav btn responsive */
+/* hero area css */
 
-main{
-    overflow-y: scroll;
-    border-radius: 40px;
-    background-color: #222222;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    height: 660px;
-    position: relative;
+.hero-area{
+    border: 1px solid #000;
+    width: 700px;
+    float: right;
+    background-color: #d9d9d9;
+    padding: 20px;
 }
 
-main header{
+.big-image{
     width: 100%;
-    background-color: transparent;
-    margin: 20px 0;
-    padding: 0 30px;
-    overflow: hidden;
+    text-align: center;
 }
 
-main header .leftHeader{
-    width: 20%;
-    float: left;
-}
-
-.leftHeader .imageSide{
-    width: 25%;
-    float: left;
-}
-
-.imageSide img{
-    border: 2px solid #fff;
-    width: 100%;
+.big-image img{
+    width: 300px;
+    border: 6px solid #000;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -93,173 +106,48 @@ main header .leftHeader{
     -o-border-radius: 50%;
 }
 
-.leftHeader .textSide{
-    width: 75%;
-    float: right;
-    color: #fff;
+.bigName{
+    width: 100%;
+    margin-top: 30px;
 }
 
-.textSide p{
+.bigName h2{
     text-align: center;
-    line-height: 50px;
+    font-size: 40px;
 }
 
-main header .rightHeader{
-    width: 80%;
-    float: right;
-}
-
-.rightHeader nav{
+.typewriter{
     width: 100%;
-    background-color: transparent;
+    margin-top: 40px;
 }
 
-.rightHeader nav ul{
-    width: 100%;
-    text-align: right;
+.typewriter p{
+    font-style: italic;
+    text-align: center;
+    font-size: 23px;
 }
 
-.rightHeader nav ul li {
-    display: inline-block;
-    margin: 5px 8px;
-}
-.rightHeader nav ul li a{
-    display: block;
-    color: #8c8c8c;
-    padding: 5px 10px;
-}
-
-.rightHeader nav ul li a:hover{
-    color: #fff;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-}
-
-/* hero area */
-
-.hero-area{
-    width: 80%;
-    margin: 80px auto 0 auto;
-    height: auto;
-    overflow: hidden;
-}
-
-.hero-area .leftSide{
-    width: 50%;
-    float: left;
-}
-
-.hero-area .leftSide #chnageCont{
-    color: #a1a1a1;
-}
-
-.hero-area .leftSide h1{
-    color: #fff;
-}
-
-.hero-area .content{
-    color: #a1a1a1;
+.selfBio{
+    width: 520px;
+    margin: 40px auto;
     text-align: justify;
 }
 
-.hero-area .leftSide p{
-    margin: 15px 0;
+.p{
+    line-height: 60px;
 }
 
-.hero-area .rightSide{
-    width: 50%;
-    float: right;
-}
-
-.hero-area .rightSide .imageSider{
-    width: 80%;
-    margin: 0 auto;
-}
-
-.hero-area .imageSider img{
-    border: 15px solid #444;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-
-
-/* hero area */
-
-/* social links area */
-
-.socialLinks{
-    width: 230px;
-    margin: 20px 0 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sIcon{
-    text-align: center;
-    color: #fff;
-    font-size: 21px;
-}
-
-.iconBlock{
-    padding: 8px 13px;
-    border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-}
-
-.facebook{
-    background-color: #1b5db3;
-}
-
-.twitter{
-    background-color: #1d9bf0;
-}
-
-.linkedin{
-    background-color: #007bb5;
-}
-
-.whatsapp{
-    background-color: #12af0a;
-}
-
-/* social links area */
-
-
-/* footer area cssk */
-
-footer{
-    padding: 20px 0;
+.button{
     width: 100%;
-    margin: 30px 0 0 0;
-    border-top: 1px solid lightgray;
+    text-align: center;
 }
 
-footer ul{
-    margin: 0 0 0 30px;
-    display: flex;
-    align-items: center;
+.button button{
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #000;
+    padding: 5px 11px;
+    color: #000;
+    cursor: pointer;
 }
-
-footer ul li{
-    margin: 0 10px;
-}
-
-footer ul li a{
-    color: #a1a1a1;
-    display: block;
-    padding: 5px 10px;
-}
-
-
-/* footer area cssk */
+/* hero area css */
