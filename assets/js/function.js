@@ -1,3 +1,5 @@
+import portfolioList from "./protfolioList.js"
+
 const toggleNavBtn = document.querySelector('.toggleNav')
 const navLinksElm = document.querySelector('.nav')
 const typeWriteEffElm = document.querySelector('.typewriter p')
@@ -6,6 +8,8 @@ const contactEmailFieldElm = document.querySelector('.contactEmail')
 const contactSubjectFieldElm = document.querySelector('.contactSubject')
 const contactMessageFieldElm = document.querySelector('.contactMessage')
 const contacForm = document.querySelector('.contactForm form')
+// contact page selector
+const myWorkFullDivElm = document.querySelector('.myWork')
 
 // type writer effect essentials
 
@@ -112,11 +116,47 @@ function contactPageFunc(){
 
 // contact page functions
 
+// portfolio page functions
+
+async function gettingPortfolioItems(){
+    const res = await fetch('https://json.extendsclass.com/bin/f6f10a40a636')
+    const result = await res.json()
+    
+    return result
+}
+
+async function portfolioPageFunc(){
+    const result = await gettingPortfolioItems()
+    result.data.map( elem => {
+        const htmlElm = `
+            <div class="workCard">
+            <div class="workThumbnail">
+                <img src="${elem.image}" alt="">
+            </div>
+            <div class="workTitle">
+                <h3>${elem.title}</h3>
+            </div>
+            <div class="workDetails">
+                <p>${elem.details}</p>
+            </div>
+            <div class="preview">
+                <a href=""><button>View</button></a>
+            </div>
+            </div>
+        `
+        myWorkFullDivElm.insertAdjacentHTML('beforeend', htmlElm)
+    })
+}
+
+// portfolio page functions
+
+
 
 
 
 
 export {
     homepageFunc,
+    portfolioPageFunc,
     contactPageFunc
 }
