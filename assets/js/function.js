@@ -9,7 +9,8 @@ const contactSubjectFieldElm = document.querySelector('.contactSubject')
 const contactMessageFieldElm = document.querySelector('.contactMessage')
 const contacForm = document.querySelector('.contactForm form')
 // contact page selector
-const myWorkFullDivElm = document.querySelector('.myWork')
+const myWorkFullDivElm = document.querySelector('.workCards')
+const filterBtnElm = document.querySelector('#filterWork')
 
 // type writer effect essentials
 
@@ -118,17 +119,29 @@ function contactPageFunc(){
 
 // portfolio page functions
 
-async function gettingPortfolioItems(){
-    const res = await fetch('https://json.extendsclass.com/bin/13c6d14e659d')
-    const result = await res.json()
+function filterSystem(){
     
-    return result
+    filterBtnElm.addEventListener('change', async e => {
+        // let targetVal = e.target.value;
+        myWorkFullDivElm.innerHTML = ''
+        const result = await gettingPortfolioItems()
+
+        result.data.find( elem => {
+            if(elem.workType === e.target.value){
+                
+                showPortfolioInUi(elem)   
+            }
+            if(e.target.value === 'all'){
+                showPortfolioInUi(elem) 
+            }
+        })
+        
+    })
 }
 
-async function portfolioPageFunc(){
-    const result = await gettingPortfolioItems()
-    result.data.map( elem => {
-        const htmlElm = `
+function showPortfolioInUi(elem){
+    
+    const htmlElm = `
             <div class="workCard">
             <div class="workThumbnail">
                 <img src="${elem.image}" alt="">
@@ -145,10 +158,65 @@ async function portfolioPageFunc(){
             </div>
         `
         myWorkFullDivElm.insertAdjacentHTML('beforeend', htmlElm)
+}
+
+async function gettingPortfolioItems(){
+    const res = await fetch('https://json.extendsclass.com/bin/13c6d14e659d')
+    const result = await res.json()
+    
+    return result
+}
+
+async function portfolioPageFunc(){
+
+    const targetVal = filterSystem()
+
+
+    toggleNavBtn.addEventListener('click', () => {
+        navLinksElm.classList.toggle('showNav')
     })
+ 
+    const result = await gettingPortfolioItems()
+    result.data.map(elem => {
+        showPortfolioInUi(elem)
+    })
+
+    // const result = await gettingPortfolioItems()
+    // result.data.map( elem => {
+    //     const htmlElm = `
+    //         <div class="workCard">
+    //         <div class="workThumbnail">
+    //             <img src="${elem.image}" alt="">
+    //         </div>
+    //         <div class="workTitle">
+    //             <h3>${elem.title}</h3>
+    //         </div>
+    //         <div class="workDetails">
+    //             <p>${elem.details}</p>
+    //         </div>
+    //         <div class="preview">
+    //             <a href="${elem.githubLink}" />//target="_blank"><button>View</button></a>
+    //         </div>
+    //         </div>
+    //     `
+    //     myWorkFullDivElm.insertAdjacentHTML('beforeend', htmlElm)
+    // })
 }
 
 // portfolio page functions
+
+// about page functionk
+
+
+
+function aboutPageFunc(){
+    toggleNavBtn.addEventListener('click', () => {
+        navLinksElm.classList.toggle('showNav')
+    })
+
+}
+
+// about page functionk
 
 
 
@@ -158,5 +226,6 @@ async function portfolioPageFunc(){
 export {
     homepageFunc,
     portfolioPageFunc,
-    contactPageFunc
+    contactPageFunc,
+    aboutPageFunc
 }

@@ -58,10 +58,30 @@
     .myWork .workCard{
         width: 48%;
     }
+
+    .aboutPass{
+        width: 90%;
+    }
+
+    .contactForm{
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 400px){
     .myWork .workCard{
-        width: 98%;
+        width: 98%; 
+    }
+
+    .aboutPass{
+        width: 100%;
+    }
+
+    .skills{
+        width: 100%;
+    }
+
+    .contactForm{
+        width: 100%;
     }
 }
