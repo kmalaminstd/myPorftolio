@@ -5,7 +5,7 @@
         "title": "Portfolio",
         "image": "https://i.ibb.co/x5GCPJ3/img1.png",
         "details": "Portfolio website designed with HTML, CSS, JS",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/portfolio/",
         "workType": "design"
       },
       {
@@ -13,7 +13,7 @@
         "title": "PSD to HTML",
         "image": "https://i.ibb.co/3R9yVZz/img2.png",
         "details": "PSDT to HTML with HTML, CSS, Jquery plugin",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/firstpsd/",
         "workType": "design"
       },
       {
@@ -21,7 +21,7 @@
         "title": "Photo Gallery",
         "image": "https://i.ibb.co/Fzbwp0q/img3.png",
         "details": "Photo Gallery project is complete with js and photos are fetching from and api.",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/photogallery/",
         "workType": "Javascript"
       },
       {
@@ -29,7 +29,7 @@
         "title": "Task Manager",
         "image": "https://i.ibb.co/CBcPVDL/img4.png",
         "details": "Task manage is a javascript project. Fully complete with vanilla js.",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/taskManagerOrganizer/",
         "workType": "Javascript"
       },
       {
@@ -37,7 +37,7 @@
         "title": "Random Password Generator",
         "image": "https://i.ibb.co/1qjDPCp/img5.png",
         "details": "Random Password Generator is a javascript project. Fully complete with vanilla js.",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/randomPasswordGenerator/",
         "workType": "Javascript"
       },
       {
@@ -45,7 +45,7 @@
         "title": "Review Slider",
         "image": "https://i.ibb.co/sw9Y3w7/img6.png",
         "details": "Review Slider is a javascript project. Fully complete with vanilla js.",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/ReviewSlider/",
         "workType": "Javascript"
       },
       {
@@ -53,7 +53,7 @@
         "title": "Filter Menu",
         "image": "https://i.ibb.co/Y3bmqFN/img7.png",
         "details": "Filter Menu is a javascript project. Fully complete with vanilla js.",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/FilterFoodMenu/",
         "workType": "Javascript"
       },
       {
@@ -61,7 +61,7 @@
         "title": "Curreny Converter Application",
         "image": "https://i.ibb.co/524WbVQ/img8.png",
         "details": "Currency Converter Application is a javascript project. Fully complete with vanilla js. Currency rate are fetching from an api. ",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/currencyConverterApp/",
         "workType": "Javascript"
       },
       {
@@ -69,7 +69,7 @@
         "title": "Guessing Game",
         "image": "https://i.ibb.co/4KTKvKS/img9.png",
         "details": "Guessing Game is a javascript project. Fully complete with vanilla js.",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/vanilaJsGuesGame/",
         "workType": "Javascript"
       },
       {
@@ -77,7 +77,7 @@
         "title": "Weather Application",
         "image": "https://i.ibb.co/Tkm904v/img10.png",
         "details": "Weather Application is a javascript project. Fully complete with vanilla js. Weather information are fetching from api.",
-        "githubLink": "",
+        "githubLink": "https://kmalaminstd.github.io/vanillaJsWeatherApp/",
         "workType": "Javascript"
       }
     ]

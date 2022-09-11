@@ -5,6 +5,12 @@
     font-family: 'Inter', sans-serif;
 }
 
+.clearify{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 body{
     background-color: #9B8484;
 }
@@ -322,3 +328,112 @@ body{
 }
 
 /* portfolio page design css  */
+
+/* about page design */
+
+.aboutPass{
+    width: 520px;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+.aboutPass p span{
+    font-weight: bold;
+    color: #dd2a7b;
+}
+
+.skills{
+    width: 400px;
+    margin: 40px auto;
+}
+
+.skills h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.skills .skillCard{
+    text-align: center;
+    width: 23%;
+    border-bottom: 1px solid #000;
+    float: left;
+    margin: 10px 1%;
+}
+
+.skillCard .skillIcon{
+    width: 100%;
+    display: block;
+    height: 120px;
+    padding: 10px 0;
+}
+
+.skillIcon img{
+    width: 80%;
+    height: 100%;
+}
+
+.skillCard .skillName{
+    padding: 7px 0;
+    font-weight: bold;
+    border-top: 1px dotted #000;
+}
+
+
+.moreDiv{
+    width: 200px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.moreDiv h2{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.socialDiv{
+    width: 200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.socialDiv .github{
+    background-color: #171515;
+}
+
+.socialDiv .linkedin{
+    background-color: #0077b5;
+}
+
+.socialDiv .facebook{
+    background-color: #3b5998;
+}
+
+.socialDiv .instagram{
+    background-color: #dd2a7b;
+}
+
+.socialDiv .twitter{
+    background-color: #00acee;
+}
+
+.socialDiv .dribbbles{
+    background-color: #ea4c89;
+}
+
+.socialDiv .csdiv{
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+}
+
+.csdiv a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* about page design */

@@ -119,7 +119,7 @@ function contactPageFunc(){
 // portfolio page functions
 
 async function gettingPortfolioItems(){
-    const res = await fetch('https://json.extendsclass.com/bin/f6f10a40a636')
+    const res = await fetch('https://json.extendsclass.com/bin/13c6d14e659d')
     const result = await res.json()
     
     return result
@@ -140,7 +140,7 @@ async function portfolioPageFunc(){
                 <p>${elem.details}</p>
             </div>
             <div class="preview">
-                <a href=""><button>View</button></a>
+                <a href="${elem.githubLink}" target="_blank"><button>View</button></a>
             </div>
             </div>
         `
