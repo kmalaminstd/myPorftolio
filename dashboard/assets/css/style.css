@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+body{
+    height: 100vh;
+    background:url('https://i.ibb.co/YX7SBv2/4893732.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 10px;
+}
+
+.container h2{
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.container .invalMsg{
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: orangered;
+}
+
+.container form{
+    width: 100%;
+}
+
+.container form input{
+    width: 100%;
+    padding: 8px 10px;
+    outline: none;
+}
+
+.container form label{
+    color: #fff;
+}
+
+.container form input:not([type="submit"]){
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    color: #fff;
+}
+
+.container form input[type="submit"]{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}

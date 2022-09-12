@@ -1,5 +1,4 @@
-import portfolioList from "./protfolioList.js"
-
+// home page selectors
 const toggleNavBtn = document.querySelector('.toggleNav')
 const navLinksElm = document.querySelector('.nav')
 const typeWriteEffElm = document.querySelector('.typewriter p')
@@ -11,6 +10,10 @@ const contacForm = document.querySelector('.contactForm form')
 // contact page selector
 const myWorkFullDivElm = document.querySelector('.workCards')
 const filterBtnElm = document.querySelector('#filterWork')
+const hireDivCloseBtnElm = document.querySelector('.closeB')
+const hireMeSecDivElm = document.querySelector('.hireMeSec')
+const hireMeBtn = document.querySelector('#hireMeBtn')
+
 
 // type writer effect essentials
 
@@ -20,6 +23,15 @@ let i = 0
 let j = 0
 let isDeleting = false
 let speed = 500
+
+function hireMeDivFunc(){
+    hireMeBtn.addEventListener('click', () => {
+        hireMeSecDivElm.style.display = 'block'
+    })
+    hireDivCloseBtnElm.addEventListener('click', ()=> {
+        hireMeSecDivElm.style.display = 'none'
+    })
+}
 
 function typeWriteEff(){
     typeWriteEffElm.innerHTML = currText.join('')
@@ -67,6 +79,7 @@ function typeWriteEff(){
 
 
 function homepageFunc(){
+    hireMeDivFunc()
     typeWriteEff()
     toggleNavBtn.addEventListener('click', () => {
         navLinksElm.classList.toggle('showNav')
