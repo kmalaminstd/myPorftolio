@@ -344,5 +344,52 @@
 }
 
 
+.blogPostMaintain{
+    width: 100%;
+    height: auto;
+}
+
+.blogPostMaintain table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.blogPostMaintain table thead{
+    background-color: lightgreen;
+}
+
+.blogPostMaintain table thead tr{
+    background-color: lightgreen;
+}
+
+.blogPostMaintain table thead tr th{
+    text-align: center;
+    padding: 5px 3px;
+}
+
+.blogPostMaintain table tbody tr{
+    border-bottom: 1px lightgray;
+}
+
+.blogPostMaintain table tbody tr:hover{
+    background-color: lightgray;
+    transform: 0.5s;
+    -webkit-transform: 0.5s;
+    -moz-transform: 0.5s;
+    -ms-transform: 0.5s;
+    -o-transform: 0.5s;
+}
+
+.blogPostMaintain table tbody tr td{
+    padding: 3px 1px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.blogPostMaintain table tbody tr td:last-child{
+    text-align: center;
+}
+
+
 
 /* dashboard page design */

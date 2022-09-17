@@ -1,3 +1,3 @@
-import { dashboardFunc } from "./function.js";
+// import { dashboardFunc } from "./function.js";
 
-dashboardFunc()
+// dashboardFunc()
