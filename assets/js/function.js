@@ -174,7 +174,7 @@ function showPortfolioInUi(elem){
 }
 
 async function gettingPortfolioItems(){
-    const res = await fetch('https://json.extendsclass.com/bin/b1f487515f49')
+    const res = await fetch('https://json.extendsclass.com/bin/a808820b8c41')
     const result = await res.json()
     
     return result
