@@ -174,7 +174,7 @@ function showPortfolioInUi(elem){
 }
 
 async function gettingPortfolioItems(){
-    const res = await fetch('https://json.extendsclass.com/bin/a808820b8c41')
+    const res = await fetch('https://json.extendsclass.com/bin/12e9b893a63f')
     const result = await res.json()
     
     return result
@@ -194,26 +194,7 @@ async function portfolioPageFunc(){
         showPortfolioInUi(elem)
     })
 
-    // const result = await gettingPortfolioItems()
-    // result.data.map( elem => {
-    //     const htmlElm = `
-    //         <div class="workCard">
-    //         <div class="workThumbnail">
-    //             <img src="${elem.image}" alt="">
-    //         </div>
-    //         <div class="workTitle">
-    //             <h3>${elem.title}</h3>
-    //         </div>
-    //         <div class="workDetails">
-    //             <p>${elem.details}</p>
-    //         </div>
-    //         <div class="preview">
-    //             <a href="${elem.githubLink}" />//target="_blank"><button>View</button></a>
-    //         </div>
-    //         </div>
-    //     `
-    //     myWorkFullDivElm.insertAdjacentHTML('beforeend', htmlElm)
-    // })
+   
 }
 
 // portfolio page functions
