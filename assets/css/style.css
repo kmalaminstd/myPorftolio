@@ -391,6 +391,11 @@ body{
     overflow-y: scroll;
 }
 
+.workCard .workDetails p {
+    padding-top: 65px;
+    padding-bottom: 10px;
+}
+
 .workCard .preview{
     width: 100%;
     
